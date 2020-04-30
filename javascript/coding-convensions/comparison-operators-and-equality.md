@@ -56,9 +56,7 @@ if (collection.length > 0) {
 
 Use braces to create blocks in `case` and `default` clauses that contain lexical declarations \(e.g. `let`, `const`, `function`, and `class`\). eslint: [`no-case-declarations`](https://eslint.org/docs/rules/no-case-declarations.html)
 
-{% hint style="warning" %}
-Why? Lexical declarations are visible in the entire `switch` block but only get initialized when assigned, which only happens when its `case` is reached. This causes problems when multiple `case` clauses attempt to define the same thing.
-{% endhint %}
+>Why? Lexical declarations are visible in the entire `switch` block but only get initialized when assigned, which only happens when its `case` is reached. This causes problems when multiple `case` clauses attempt to define the same thing.
 
 ```javascript
 // bad
