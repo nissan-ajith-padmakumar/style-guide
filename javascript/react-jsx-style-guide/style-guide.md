@@ -359,9 +359,7 @@ We don’t recommend using indexes for keys if the order of items may change.
 
 Always define explicit defaultProps for all non-required props.
 
-{% hint style="info" %}
-Why? propTypes are a form of documentation, and providing defaultProps means the reader of your code doesn’t have to assume as much. In addition, it can mean that your code can omit certain type checks.
-{% endhint %}
+> Why? propTypes are a form of documentation, and providing defaultProps means the reader of your code doesn’t have to assume as much. In addition, it can mean that your code can omit certain type checks.
 
 ```jsx
 // bad
