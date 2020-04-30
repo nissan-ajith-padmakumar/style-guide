@@ -2,7 +2,7 @@
 
 We will be checking onto following items
 
-{% page-ref page="arrow-functions.md" %}
+<!-- {% page-ref page="arrow-functions.md" %}
 
 {% page-ref page="classes-and-inheritance.md" %}
 
@@ -19,6 +19,6 @@ We will be checking onto following items
 {% page-ref page="rest-operator.md" %}
 
 {% page-ref page="spread-operator.md" %}
-
+ -->
 
 
