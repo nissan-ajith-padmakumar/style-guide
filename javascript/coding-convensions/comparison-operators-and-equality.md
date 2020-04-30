@@ -137,9 +137,7 @@ const baz = !c;
 
 When mixing operators, enclose them in parentheses. The only exception is the standard arithmetic operators: `+`, `-`, and `**` since their precedence is broadly understood. We recommend enclosing `/` and `*` in parentheses because their precedence can be ambiguous when they are mixed. 
 
-{% hint style="warning" %}
-Why? This improves readability and clarifies the developer’s intention.
-{% endhint %}
+> Why? This improves readability and clarifies the developer’s intention.
 
 ```javascript
 // bad

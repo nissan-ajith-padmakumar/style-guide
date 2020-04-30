@@ -53,13 +53,9 @@ function Listing({ hello }) {
 
 ### Mixins
 
-{% hint style="warning" %}
-[Do not use mixins](https://facebook.github.io/react/blog/2016/07/13/mixins-considered-harmful.html).
-{% endhint %}
+> [Do not use mixins](https://facebook.github.io/react/blog/2016/07/13/mixins-considered-harmful.html).
 
-{% hint style="warning" %}
-Why? Mixins introduce implicit dependencies, cause name clashes, and cause snowballing complexity. Most use cases for mixins can be accomplished in better ways via components, higher-order components, or utility modules.
-{% endhint %}
+> Why? Mixins introduce implicit dependencies, cause name clashes, and cause snowballing complexity. Most use cases for mixins can be accomplished in better ways via components, higher-order components, or utility modules.
 
 ### Naming
 
@@ -98,9 +94,7 @@ import Footer from './Footer';
 
 **Higher-order Component Naming**: Use a composite of the higher-order component’s name and the passed-in component’s name as the `displayName` on the generated component. For example, the higher-order component `withFoo()`, when passed a component `Bar` should produce a component with a `displayName` of `withFoo(Bar)`.
 
-{% hint style="warning" %}
-Why? A component’s `displayName` may be used by developer tools or in error messages, and having a value that clearly expresses this relationship helps people understand what is happening.
-{% endhint %}
+> Why? A component’s `displayName` may be used by developer tools or in error messages, and having a value that clearly expresses this relationship helps people understand what is happening.
 
 ```javascript
 // bad
@@ -127,9 +121,7 @@ export default function withFoo(WrappedComponent) {
 
 **Props Naming**: Avoid using DOM component prop names for different purposes.
 
-{% hint style="warning" %}
-Why? People expect props like `style` and `className` to mean one specific thing. Varying this API for a subset of your app makes the code less readable and less maintainable, and may cause bugs.
-{% endhint %}
+> Why? People expect props like `style` and `className` to mean one specific thing. Varying this API for a subset of your app makes the code less readable and less maintainable, and may cause bugs.
 
 ```jsx
 // bad
@@ -208,9 +200,7 @@ Follow these alignment styles for JSX syntax.
 
 Always use double quotes \(`"`\) for JSX attributes, but single quotes \(`'`\) for all other JS. 
 
-{% hint style="warning" %}
-Why? Regular HTML attributes also typically use double quotes instead of single, so JSX attributes mirror this convention.
-{% endhint %}
+> Why? Regular HTML attributes also typically use double quotes instead of single, so JSX attributes mirror this convention.
 
 ```jsx
 // bad
@@ -308,9 +298,7 @@ Always include an `alt` prop on `<img>` tags. If the image is presentational, `a
 
 Do not use words like "image", "photo", or "picture" in `<img>` `alt` props. 
 
-{% hint style="warning" %}
-Why? Screenreaders already announce `img` elements as images, so there is no need to include this information in the alt text.
-{% endhint %}
+> Why? Screenreaders already announce `img` elements as images, so there is no need to include this information in the alt text.
 
 ```jsx
 // bad
@@ -335,9 +323,7 @@ Use only valid, non-abstract [ARIA roles](https://www.w3.org/TR/wai-aria/#usage_
 
 Do not use `accessKey` on elements. 
 
-{% hint style="warning" %}
-Why? Inconsistencies between keyboard shortcuts and keyboard commands used by people using screenreaders and keyboards complicate accessibility.
-{% endhint %}
+> Why? Inconsistencies between keyboard shortcuts and keyboard commands used by people using screenreaders and keyboards complicate accessibility.
 
 ```jsx
 // bad
@@ -349,9 +335,7 @@ Why? Inconsistencies between keyboard shortcuts and keyboard commands used by pe
 
 Avoid using an array index as `key` prop, prefer a stable ID. 
 
-{% hint style="warning" %}
-Why? Not using a stable ID [is an anti-pattern](https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318) because it can negatively impact performance and cause issues with component state.
-{% endhint %}
+> Why? Not using a stable ID [is an anti-pattern](https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318) because it can negatively impact performance and cause issues with component state.
 
 We don’t recommend using indexes for keys if the order of items may change.
 
@@ -407,9 +391,7 @@ SFC.defaultProps = {
 
 Use spread props sparingly.
 
-{% hint style="warning" %}
-Why? Otherwise you’re more likely to pass unnecessary props down to components. And for React v15.6.1 and older, you could [pass invalid HTML attributes to the DOM](https://reactjs.org/blog/2017/09/08/dom-attributes-in-react-16.html).
-{% endhint %}
+> Why? Otherwise you’re more likely to pass unnecessary props down to components. And for React v15.6.1 and older, you could [pass invalid HTML attributes to the DOM](https://reactjs.org/blog/2017/09/08/dom-attributes-in-react-16.html).
 
 #### Exceptions:
 
@@ -551,9 +533,7 @@ function ItemList(props) {
 
 Bind event handlers for the render method in the constructor. 
 
-{% hint style="warning" %}
-Why? A bind call in the render path creates a brand new function on every single render. Do not use arrow functions in class fields, because it makes them [challenging to test and debug, and can negatively impact performance](https://medium.com/@charpeni/arrow-functions-in-class-properties-might-not-be-as-great-as-we-think-3b3551c440b1), and because conceptually, class fields are for data, not logic.
-{% endhint %}
+> Why? A bind call in the render path creates a brand new function on every single render. Do not use arrow functions in class fields, because it makes them [challenging to test and debug, and can negatively impact performance](https://medium.com/@charpeni/arrow-functions-in-class-properties-might-not-be-as-great-as-we-think-3b3551c440b1), and because conceptually, class fields are for data, not logic.
 
 ```jsx
 // bad
@@ -598,9 +578,7 @@ class extends React.Component {
 
 Do not use underscore prefix for internal methods of a React component.
 
-{% hint style="warning" %}
-Why? Underscore prefixes are sometimes used as a convention in other languages to denote privacy. But, unlike those languages, there is no native support for privacy in JavaScript, everything is public. Regardless of your intentions, adding underscore prefixes to your properties does not actually make them private, and any property \(underscore-prefixed or not\) should be treated as being public. .
-{% endhint %}
+> Why? Underscore prefixes are sometimes used as a convention in other languages to denote privacy. But, unlike those languages, there is no native support for privacy in JavaScript, everything is public. Regardless of your intentions, adding underscore prefixes to your properties does not actually make them private, and any property \(underscore-prefixed or not\) should be treated as being public. .
 
 ```jsx
 // bad
@@ -715,7 +693,5 @@ Ordering for `React.createClass`
 
 Do not use `isMounted`. 
 
-{% hint style="warning" %}
-Why? [`isMounted` is an anti-pattern](https://facebook.github.io/react/blog/2015/12/16/ismounted-antipattern.html), is not available when using ES6 classes, and is on its way to being officially deprecated.
-{% endhint %}
+> Why? [`isMounted` is an anti-pattern](https://facebook.github.io/react/blog/2015/12/16/ismounted-antipattern.html), is not available when using ES6 classes, and is on its way to being officially deprecated.
 

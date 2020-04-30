@@ -2,13 +2,9 @@
 
 When you must use an anonymous function \(as when passing an inline callback\), use arrow function notation. 
 
-{% hint style="warning" %}
-Why? It creates a version of the function that executes in the context of `this`, which is usually what you want, and is a more concise syntax.
-{% endhint %}
+> Why? It creates a version of the function that executes in the context of `this`, which is usually what you want, and is a more concise syntax.
 
-{% hint style="warning" %}
-Why not? If you have a fairly complicated function, you might move that logic out into its own named function expression.
-{% endhint %}
+> Why not? If you have a fairly complicated function, you might move that logic out into its own named function expression.
 
 ```javascript
 // bad
@@ -26,9 +22,7 @@ Why not? If you have a fairly complicated function, you might move that logic ou
 
 If the function body consists of a single statement returning an [expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions) without side effects, omit the braces and use the implicit return. Otherwise, keep the braces and use a `return` statement. 
 
-{% hint style="warning" %}
-Why? Syntactic sugar. It reads well when multiple functions are chained together.
-{% endhint %}
+> Why? Syntactic sugar. It reads well when multiple functions are chained together.
 
 ```javascript
 // bad
@@ -72,9 +66,7 @@ foo(() => {
 
 In case the expression spans over multiple lines, wrap it in parentheses for better readability.
 
-{% hint style="warning" %}
-Why? It shows clearly where the function starts and ends.
-{% endhint %}
+> Why? It shows clearly where the function starts and ends.
 
 ```javascript
 // bad
@@ -95,9 +87,7 @@ Why? It shows clearly where the function starts and ends.
 
 Always include parentheses around arguments for clarity and consistency. 
 
-{% hint style="warning" %}
-Why? Minimizes diff churn when adding or removing arguments.
-{% endhint %}
+> Why? Minimizes diff churn when adding or removing arguments.
 
 ```javascript
 // bad

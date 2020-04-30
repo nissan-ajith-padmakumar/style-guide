@@ -2,9 +2,7 @@
 
 Use computed property names when creating objects with dynamic property names.
 
-{% hint style="warning" %}
-Why? They allow you to define all the properties of an object in one place.
-{% endhint %}
+> Why? They allow you to define all the properties of an object in one place.
 
 ```javascript
 function getKey(k) {

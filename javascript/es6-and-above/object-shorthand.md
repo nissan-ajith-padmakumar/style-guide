@@ -24,9 +24,7 @@ const atom = {
 
 Use property value shorthand. 
 
-{% hint style="warning" %}
-Why? It is shorter and descriptive.
-{% endhint %}
+> Why? It is shorter and descriptive.
 
 ```javascript
 const lukeSkywalker = 'Luke Skywalker';
@@ -44,9 +42,7 @@ const obj = {
 
 Group your shorthand properties at the beginning of your object declaration.
 
-{% hint style="warning" %}
-Why? It’s easier to tell which properties are using the shorthand.
-{% endhint %}
+> Why? It’s easier to tell which properties are using the shorthand.
 
 ```javascript
 const anakinSkywalker = 'Anakin Skywalker';

@@ -8,9 +8,7 @@ For any character that has a special escape sequence \(`\'`, `\"`, `\\`, `\b`, `
 
 For the remaining non-ASCII characters, either the actual Unicode character \(e.g. `∞`\) or the equivalent hex or Unicode escape \(e.g. `\u221e`\) is used, depending only on which makes the code **easier to read and understand**.
 
-{% hint style="info" %}
-Tip: In the Unicode escape case, and occasionally even when actual Unicode characters are used, an explanatory comment can be very helpful.
-{% endhint %}
+> Tip: In the Unicode escape case, and occasionally even when actual Unicode characters are used, an explanatory comment can be very helpful.
 
 ```javascript
 /* Best: perfectly clear even without a comment. */

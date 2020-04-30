@@ -2,9 +2,7 @@
 
 Use object destructuring when accessing and using multiple properties of an object. 
 
-{% hint style="warning" %}
-Why? Destructuring saves you from creating temporary references for those properties.
-{% endhint %}
+> Why? Destructuring saves you from creating temporary references for those properties.
 
 ```javascript
 // bad
@@ -42,9 +40,7 @@ const [first, second] = arr;
 
 Use object destructuring for multiple return values, not array destructuring.
 
-{% hint style="warning" %}
-Why? You can add new properties over time or change the order of things without breaking call sites.
-{% endhint %}
+> Why? You can add new properties over time or change the order of things without breaking call sites.
 
 ```javascript
 // bad

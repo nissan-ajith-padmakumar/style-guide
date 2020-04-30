@@ -2,9 +2,7 @@
 
 Always use `class`. Avoid manipulating `prototype` directly.
 
-{% hint style="warning" %}
-Why? `class` syntax is more concise and easier to reason about
-{% endhint %}
+> Why? `class` syntax is more concise and easier to reason about
 
 ```javascript
 // bad
@@ -32,9 +30,7 @@ class Queue {
 
 Use `extends` for inheritance.
 
-{% hint style="warning" %}
-Why? It is a built-in way to inherit prototype functionality without breaking `instanceof`.
-{% endhint %}
+> Why? It is a built-in way to inherit prototype functionality without breaking `instanceof`.
 
 ```javascript
 // bad
@@ -139,9 +135,7 @@ class Rey extends Jedi {
 
 Avoid duplicate class members.
 
-{% hint style="warning" %}
-Why? Duplicate class member declarations will silently prefer the last one - having duplicates is almost certainly a bug.
-{% endhint %}
+> Why? Duplicate class member declarations will silently prefer the last one - having duplicates is almost certainly a bug.
 
 ```javascript
 // bad

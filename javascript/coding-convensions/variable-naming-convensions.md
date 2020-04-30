@@ -12,9 +12,7 @@ const superPower = new SuperPower();
 
 Use one `const` or `let` declaration per variable or assignment.
 
-{% hint style="warning" %}
-Why? It’s easier to add new variable declarations this way, and you never have to worry about swapping out a `;` for a `,` or introducing punctuation-only diffs. You can also step through each declaration with the debugger, instead of jumping through all of them at once
-{% endhint %}
+> Why? It’s easier to add new variable declarations this way, and you never have to worry about swapping out a `;` for a `,` or introducing punctuation-only diffs. You can also step through each declaration with the debugger, instead of jumping through all of them at once
 
 ```javascript
 // bad
@@ -36,9 +34,7 @@ const dragonball = 'z';
 
 Group all your `const`s and then group all your `let`s.
 
-{% hint style="warning" %}
-Why? This is helpful when later on you might need to assign a variable depending on one of the previous assigned variables.
-{% endhint %}
+> Why? This is helpful when later on you might need to assign a variable depending on one of the previous assigned variables.
 
 ```javascript
 // bad
@@ -63,9 +59,7 @@ let length;
 
 Assign variables where you need them, but place them in a reasonable place.
 
-{% hint style="warning" %}
-Why? `let` and `const` are block scoped and not function scoped.
-{% endhint %}
+> Why? `let` and `const` are block scoped and not function scoped.
 
 ```javascript
 // bad - unnecessary function call
@@ -103,9 +97,7 @@ function checkName(hasName) {
 
 Don’t chain variable assignments
 
-{% hint style="warning" %}
-Why? `let` and `const` are block scoped and not function scoped.
-{% endhint %}
+> Why? `let` and `const` are block scoped and not function scoped.
 
 ```javascript
 // bad
@@ -137,9 +129,7 @@ console.log(c); // throws ReferenceError
 
 Avoid using unary increments and decrements \(`++`, `--`\). 
 
-{% hint style="warning" %}
-Why? Per the eslint documentation, unary increment and decrement statements are subject to automatic semicolon insertion and can cause silent errors with incrementing or decrementing values within an application. It is also more expressive to mutate your values with statements like `num += 1` instead of `num++` or `num ++`. Disallowing unary increment and decrement statements also prevents you from pre-incrementing/pre-decrementing values unintentionally which can also cause unexpected behavior in your programs.
-{% endhint %}
+> Why? Per the eslint documentation, unary increment and decrement statements are subject to automatic semicolon insertion and can cause silent errors with incrementing or decrementing values within an application. It is also more expressive to mutate your values with statements like `num += 1` instead of `num++` or `num ++`. Disallowing unary increment and decrement statements also prevents you from pre-incrementing/pre-decrementing values unintentionally which can also cause unexpected behavior in your programs.
 
 ```javascript
 // bad
@@ -172,9 +162,7 @@ const truthyCount = array.filter(Boolean).length;
 
 Avoid linebreaks before or after `=` in an assignment. If your assignment violates [`max-len`](https://eslint.org/docs/rules/max-len.html), surround the value in parens. 
 
-{% hint style="warning" %}
-Why? Linebreaks surrounding `=` can obfuscate the value of an assignment.
-{% endhint %}
+> Why? Linebreaks surrounding `=` can obfuscate the value of an assignment.
 
 ```javascript
 // bad
@@ -196,9 +184,7 @@ const foo = 'superLongLongLongLongLongLongLongLongString';
 
 Disallow unused variables. 
 
-{% hint style="warning" %}
-Why? Variables that are declared and not used anywhere in the code are most likely an error due to incomplete refactoring. Such variables take up space in the code and can lead to confusion by readers.
-{% endhint %}
+> Why? Variables that are declared and not used anywhere in the code are most likely an error due to incomplete refactoring. Such variables take up space in the code and can lead to confusion by readers.
 
 ```javascript
 // bad

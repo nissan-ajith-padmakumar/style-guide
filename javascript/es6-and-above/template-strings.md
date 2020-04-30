@@ -2,9 +2,7 @@
 
 When programmatically building up strings, use template strings instead of concatenation. 
 
-{% hint style="warning" %}
-Why? Template strings give you a readable, concise syntax with proper newlines and string interpolation features.
-{% endhint %}
+> Why? Template strings give you a readable, concise syntax with proper newlines and string interpolation features.
 
 ```javascript
 // bad

@@ -53,9 +53,7 @@ const good = new User({
 
 Do not use trailing or leading underscores.
 
-{% hint style="warning" %}
-Why? JavaScript does not have the concept of privacy in terms of properties or methods. Although a leading underscore is a common convention to mean “private”, in fact, these properties are fully public, and as such, are part of your public API contract. This convention might lead developers to wrongly think that a change won’t count as breaking, or that tests aren’t needed. tl;dr: if you want something to be “private”, it must not be observably present.
-{% endhint %}
+> Why? JavaScript does not have the concept of privacy in terms of properties or methods. Although a leading underscore is a common convention to mean “private”, in fact, these properties are fully public, and as such, are part of your public API contract. This convention might lead developers to wrongly think that a change won’t count as breaking, or that tests aren’t needed. tl;dr: if you want something to be “private”, it must not be observably present.
 
 ```javascript
 // bad
@@ -157,9 +155,7 @@ export default StyleGuide;
 
 Acronyms and initialisms should always be all uppercased, or all lowercased.
 
-{% hint style="warning" %}
-Why? Names are for readability, not to appease a computer algorithm.
-{% endhint %}
+> Why? Names are for readability, not to appease a computer algorithm.
 
 ```javascript
 // bad
@@ -194,9 +190,7 @@ const requests = [
 
 You may optionally uppercase a constant only if it \(1\) is exported, \(2\) is a `const` \(it can not be reassigned\), and \(3\) the programmer can trust it \(and its nested properties\) to never change.
 
-{% hint style="warning" %}
-Why? This is an additional tool to assist in situations where the programmer would be unsure if a variable might ever change. UPPERCASE\_VARIABLES are letting the programmer know that they can trust the variable \(and its properties\) not to change.
-{% endhint %}
+> Why? This is an additional tool to assist in situations where the programmer would be unsure if a variable might ever change. UPPERCASE\_VARIABLES are letting the programmer know that they can trust the variable \(and its properties\) not to change.
 
 * What about all `const` variables? - This is unnecessary, so uppercasing should not be used for constants within a file. It should be used for exported constants however.
 * What about exported objects? - Uppercase at the top level of export \(e.g. `EXPORTED_OBJECT.key`\) and maintain that all nested properties do not change.

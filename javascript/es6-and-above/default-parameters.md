@@ -28,9 +28,7 @@ function handleThings(opts = {}) {
 
 Avoid side effects with default parameters.
 
-{% hint style="warning" %}
-Why? They are confusing to reason about.
-{% endhint %}
+> Why? They are confusing to reason about.
 
 ```javascript
 var b = 1;
