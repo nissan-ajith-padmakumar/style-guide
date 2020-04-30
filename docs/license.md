@@ -1,7 +1,3 @@
-layout: page
-title: "License"
-permalink: /license/
-
 # LICENSE
 
 \(The MIT License\)
