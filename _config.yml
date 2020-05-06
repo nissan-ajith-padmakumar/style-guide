@@ -1,3 +1,23 @@
 theme: jekyll-theme-cayman
 include: 
+ - css-and-scss/css-and-sass-styleguide.md
+ - java-coding-guide-lines/index.md
+ - java-coding-guide-lines/java-guidelines-from-sonarcube.md
+ - javascript/coding-convensions/comparison-operators-and-equality.md
+ - javascript/coding-convensions/es-modules.md
+ - javascript/coding-convensions/naming-convensions.md
+ - javascript/coding-convensions/index.md
+ - javascript/coding-convensions/variable-naming-convensions.md
+ - javascript/es6-and-above/arrow-functions.md
+ - javascript/es6-and-above/classes-and-inheritance.md
+ - javascript/es6-and-above/default-parameters.md
+ - javascript/es6-and-above/destructuring.md
+ - javascript/es6-and-above/object-shorthand.md
+ - javascript/es6-and-above/rest-operator.md
+ - javascript/es6-and-above/spread-operator.md
+ - javascript/es6-and-above/template-strings.md
+ - javascript/es6-and-above/object-computed.md
+ - javascript/react-jsx-style-guide/index.md
+ - javascript/react-jsx-style-guide/style-guide.md
+ - javascript/source-file-basics.md
  - javascript/special-characters.md 

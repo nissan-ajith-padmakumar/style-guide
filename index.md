@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+# Style Guide
 
-You can use the [editor on GitHub](https://github.com/nissan-ajith-padmakumar/style-guide/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### **Purpose of Having Coding Standards:**
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+* A coding standard gives a uniform appearance to the codes written by different engineers.
+* It improves readability, and maintainability of the code and it reduces complexity also.
+* It helps in code reuse and helps to detect error easily.
+* It promotes sound programming practices and increases efficiency of the programmers.
 
-### Markdown
+### **Advantages of Coding Guidelines:**
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1. **Security Issues**
 
-```markdown
-Syntax highlighted code block
+   The main reasons for commonly exploited software vulnerabilities are inconsistencies, bugs, and errors in the logic. Most of these problems arise due to programming errors that result from poor coding practices.
 
-# Header 1
-## Header 2
-### Header 3
+2. **Site Performance Issues:** 
 
-- Bulleted
-- List
+   Bad coding affects the overall performance of the site. Various performance issues include
 
-1. Numbered
-2. List
+3. **Increases Efficiency:**  Establishing coding standards enables the team to detect problems early or prevent them entirely. This enhances the efficiency throughout the software process.
+4. **Minimize the Risk of Project Failure:**  Coding standards reduce the risk of failure of the application.
+5. **Reduces Complexity**  Higher the complexity of a code the more vulnerable it is to errors. Coding standards help develop software programs with reduced complexity thereby minimizing errors.
+6. **Maintenance becomes easy**
 
-**Bold** and _Italic_ and `Code` text
+   If a source code is consistent it can be easily maintained. This is because anyone can step in at any stage maintain it or incorporate any modifications.
 
-[Link](url) and ![Image](src)
-```
+7. **Correction of bugs**
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+   A consistent source code makes it easy to locate and correct bugs in the software.
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nissan-ajith-padmakumar/style-guide/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
