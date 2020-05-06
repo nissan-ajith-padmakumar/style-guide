@@ -1,4 +1,5 @@
 theme: jekyll-theme-cayman
+title: Style Guide
 include: 
  - css-and-scss/css-and-sass-styleguide.md
  - java-coding-guide-lines/index.md
