@@ -1,0 +1,17 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.main-content {
+    max-width: 100rem;
+    .container {
+        display: flex;
+        .sidebar {
+            flex:1;
+        }
+        .content {
+            flex:3;
+        }
+    }
+}
