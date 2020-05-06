@@ -17,9 +17,9 @@ docgroups:
       - page: Special Characters
         url: /style-guide/javascript/special-characters.html
       - page: ReactJs 
-        url: /style-guide/javascript/react-jsx-style-guide/index.md
+        url: /style-guide/javascript/react-jsx-style-guide/index.html
         subsubfolderitems:
-          - page: Sonarcube GuideLines
+          - page: Overview
             url: /style-guide/javascript/react-jsx-style-guide/style-guide.html
       - page: ES6 and Above 
         subsubfolderitems:
