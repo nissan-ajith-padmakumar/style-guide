@@ -2,7 +2,7 @@ docgroups:
   - title: Java 
     subfolderitems:
       - page: Overview
-        url: /style-guide/java-coding-guide-lines/index.html
+        url: /style-guide/java-coding-guide-lines/
         subsubfolderitems:
           - page: Sonarcube GuideLines
             url: /style-guide/java-coding-guide-lines/java-guidelines-from-sonarcube.html
@@ -17,11 +17,12 @@ docgroups:
       - page: Special Characters
         url: /style-guide/javascript/special-characters.html
       - page: ReactJs 
-        url: /style-guide/javascript/react-jsx-style-guide/index.html
+        url: /style-guide/javascript/react-jsx-style-guide/
         subsubfolderitems:
           - page: Overview
             url: /style-guide/javascript/react-jsx-style-guide/style-guide.html
       - page: ES6 and Above 
+        url: /style-guide/javascript/es6-and-above/
         subsubfolderitems:
           - page: Arrow functions
             url: /style-guide/javascript/es6-and-above/arrow-functions.html
@@ -40,7 +41,7 @@ docgroups:
           - page: Template Strings
             url: /style-guide/javascript/es6-and-above/template-strings.html
       - page: Coding Convensions
-        url: /style-guide/javascript/coding-convensions/index.md
+        url: /style-guide/javascript/coding-convensions/
         subsubfolderitems:
           - page: Comparison Operator and Equality
             url: /style-guide/javascript/coding-convensions/comparison-operators-and-equality.html
