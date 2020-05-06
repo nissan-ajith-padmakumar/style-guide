@@ -9,7 +9,7 @@ We will be checking onto following items
 
 3. [Object Shorthand](/style-guide/javascript/es6-and-above/object-shorthand.html)
 
-4. [Object Computed properties](/style-guide/javascript/es6-and-above/untitled.html)
+4. [Object Computed properties](/style-guide/javascript/es6-and-above/object-computed.html)
 
 5. [Template Strings](/style-guide/javascript/es6-and-above/template-strings.html)
 

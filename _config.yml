@@ -21,4 +21,5 @@ include:
  - javascript/react-jsx-style-guide/style-guide.md
  - javascript/source-file-basics.md
  - javascript/special-characters.md 
+ - java-coding-guide-lines/static-code-analysis.html
 
