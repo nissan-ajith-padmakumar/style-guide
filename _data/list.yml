@@ -1,34 +1,51 @@
 docgroups:
-  - title: Java Coding Guidelines
+  - title: Java 
     subfolderitems:
-      - page: Guidelines Overview
-        url: /java-coding-guide-lines/index.html
+      - page: Overview
+        url: /style-guide/java-coding-guide-lines/index.html
         subsubfolderitems:
           - page: Sonarcube GuideLines
-            url: /java-coding-guide-lines/java-guidelines-from-sonarcube.html
-  - title: Group 2
+            url: /style-guide/java-coding-guide-lines/java-guidelines-from-sonarcube.html
+  - title: CSS and SCSS
     subfolderitems:
-      - page: Piece 1
-        url: /piece1.html
-      - page: Piece 2
-        url: /piece2.html
-      - page: Piece 3
-        url: /piece3.html
-        subsubfolderitems:
-          - page: Subpiece 1
-            url: /subpiece1.html
-          - page: Subpiece2
-            url: /subpiece2.html
-  - title: Group 3
+      - page: Overview
+        url: /style-guide/css-and-scss/css-and-sass-styleguide.html
+  - title: Javascript 
     subfolderitems:
-      - page: Widget 1
-        url: /widget1.html
+      - page: Source file Basics
+        url: /style-guide/javascript/source-file-basics.html
+      - page: Special Characters
+        url: /style-guide/javascript/special-characters.html
+      - page: ReactJs 
+        url: /style-guide/javascript/react-jsx-style-guide/index.md
         subsubfolderitems:
-          - page: Subwidget 1
-            url: /subwidget1.html
-          - page: Subwidget 2
-            url: /subwidget2.html
-      - page: Widget 2
-        url: /widget2.html
-      - page: Widget 3
-        url: /widget3.html
+          - page: Sonarcube GuideLines
+            url: /style-guide/javascript/react-jsx-style-guide/style-guide.html
+      - page: ES6 and Above 
+        subsubfolderitems:
+          - page: Arrow functions
+            url: /style-guide/javascript/es6-and-above/arrow-functions.html
+          - page: Classes and Inheritance
+            url: /style-guide/javascript/es6-and-above/classes-and-inheritance.html
+          - page: Default parameters
+            url: /style-guide/javascript/es6-and-above/default-parameters.html
+          - page: Object Computed Properties
+            url: /style-guide/javascript/es6-and-above/object-computed.html
+          - page: Object Shorthand
+            url: /style-guide/javascript/es6-and-above/object-shorthand.html
+          - page: Rest Operator
+            url: /style-guide/javascript/es6-and-above/rest-operator.html
+          - page: Spread Operator
+            url: /style-guide/javascript/es6-and-above/spread-operator.html
+          - page: Template Strings
+            url: /style-guide/javascript/es6-and-above/template-strings.html
+      - page: Coding Convensions
+        url: /style-guide/javascript/coding-convensions/index.md
+        subsubfolderitems:
+          - page: Comparison Operator and Equality
+            url: /style-guide/javascript/coding-convensions/comparison-operators-and-equality.html
+          - page: ES Modules
+            url: /style-guide/javascript/coding-convensions/es-modules.html
+          - page: Naming Conventions
+            url: /style-guide/javascript/coding-convensions/naming-convensions.html
+  
