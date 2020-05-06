@@ -5,7 +5,7 @@ PMD scans Java source code and looks for potential problems
 Problems range from breaking naming conventions and unused code or varibales to performance and complexity of code, not forgetting lots of possible bugs
 The PMD project also supports JavaScript, PLSQL, Apache Velocity, XML and XSL. It also ships with a CPD, a tool to detect duplicated code in several languages.
 
-![PMD](//style-guide/assets/images/pmd.png)
+![PMD](/style-guide/assets/images/pmd.png)
 
 PMD integrates with several tools and editors, including Eclipse, NetBeans, IntelliJ IDEA, TextPad, Maven, Ant and Emacs.
 You can suppress warnings (in a variety of ways) and you can also write your own rules in either Java or XPath.
