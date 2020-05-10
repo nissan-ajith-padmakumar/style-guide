@@ -4,8 +4,6 @@ docgroups:
       - page: Overview
         url: /style-guide/java-coding-guide-lines/
         subsubfolderitems:
-          - page: Sonarcube GuideLines
-            url: /style-guide/java-coding-guide-lines/java-guidelines-from-sonarcube.html
           - page: Static Code Analysis Tools
             url: /style-guide/java-coding-guide-lines/static-code-analysis.html
           - page: String Handling
