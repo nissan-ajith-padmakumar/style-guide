@@ -4,7 +4,7 @@
 
 Creating a new Throwable without actually throwing it is useless and is probably due to a mistake.
 
-## Exception types should not be tested using &quot;instanceof&quot; in catch blocks
+## Exception types should not be tested using "instanceof" in catch blocks
 
 Multiple catch blocks of the appropriate type should be used instead of catching a general exception, and then testing on the type.
 
@@ -36,7 +36,7 @@ try {
 
 Nesting try/catch blocks severely impacts the readability of source code because it makes it too difficult to understand which block will catch which exception.
 
-## &quot;catch&quot; clauses should do more than rethrow
+## "catch" clauses should do more than rethrow
 
 A catch clause that only rethrows the caught exception has the same effect as omitting the catch altogether and letting it bubble up automatically, but with more code and the additional detriment of leaving maintainers scratching their heads.
 
@@ -102,7 +102,7 @@ public String readFile(File f) {
 ```
 ## Resources should be closed
 
-Connections, streams, files, and other classes that implement the Closeable interface or its super-interface, AutoCloseable, needs to be closed after use. Further, that close call must be made in a finally block otherwise an exception could keep the call from being made. Preferably, when class implements AutoCloseable, resource should be created using &quot;try-with-resources&quot; pattern and will be closed automatically.
+Connections, streams, files, and other classes that implement the Closeable interface or its super-interface, AutoCloseable, needs to be closed after use. Further, that close call must be made in a finally block otherwise an exception could keep the call from being made. Preferably, when class implements AutoCloseable, resource should be created using "try-with-resources" pattern and will be closed automatically.
 
 ### Noncompliant Code Example
 ```java
@@ -118,7 +118,7 @@ private void readTheFile() throws IOException {
 
     // ...
 
-    Files.lines(&quot;input.txt&quot;).forEach(System.out::println); // Noncompliant: The stream needs to be closed
+    Files.lines("input.txt").forEach(System.out::println); // Noncompliant: The stream needs to be closed
 
 }
 
@@ -130,7 +130,7 @@ private void doSomething() {
 
         for (String property : propertyList) {
 
-            stream = new FileOutputStream(&quot;myfile.txt&quot;); // Noncompliant
+            stream = new FileOutputStream("myfile.txt"); // Noncompliant
 
             // ...
 
@@ -164,7 +164,7 @@ private void readTheFile(String fileName) throws IOException {
 
     // ..
 
-    try (Stream\&lt;String\&gt; input = Files.lines(&quot;input.txt&quot;)) {
+    try (Stream<String> input = Files.lines("input.txt")) {
 
     input.forEach(System.out::println);
 
@@ -178,7 +178,7 @@ private void readTheFile(String fileName) throws IOException {
 
     try {
 
-        stream = new FileOutputStream(&quot;myfile.txt&quot;);
+        stream = new FileOutputStream("myfile.txt");
 
         for (String property : propertyList) {
 
@@ -210,7 +210,7 @@ try {
 
 } catch (Exception e) { // Noncompliant - exception is lost
 
-    LOGGER.info(&quot;context&quot;);
+    LOGGER.info("context");
 
 }
 
@@ -230,7 +230,7 @@ try {
 
 } catch (Exception e) { // Noncompliant - original exception is lost
 
-    throw new RuntimeException(&quot;context&quot;);
+    throw new RuntimeException("context");
 
 }
 ```
@@ -286,7 +286,7 @@ try {
 
 } catch (NumberFormatException e) {
 
-    // It is perfectly acceptable to not handle &quot;e&quot; here
+    // It is perfectly acceptable to not handle "e" here
 
     myInteger = 0;
 
@@ -300,7 +300,7 @@ Using such generic exceptions as Error, RuntimeException, Throwable, and Excepti
 ```java
 public void foo(String bar) throws Throwable { // Noncompliant
 
-    throw new RuntimeException(&quot;My Message&quot;); // Noncompliant
+    throw new RuntimeException("My Message"); // Noncompliant
 
 }
 ```
@@ -308,7 +308,7 @@ public void foo(String bar) throws Throwable { // Noncompliant
 ```java
 public void foo(String bar) {
 
-    throw new MyOwnRuntimeException(&quot;My Message&quot;);
+    throw new MyOwnRuntimeException("My Message");
 
 }
 ```

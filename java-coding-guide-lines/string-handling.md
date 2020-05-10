@@ -1,6 +1,6 @@
 # String Handling
 
-## Strings and Boxed types should be compared using &quot;equals()&quot;
+## Strings and Boxed types should be compared using "equals()"
 
 It&#39;s almost always a mistake to compare two instances of java.lang.String or boxed types like java.lang.Integer using reference equality == or !=, because it is not comparing actual value but locations in memory.
 
@@ -18,11 +18,11 @@ String firstName = getFirstName();
 
 String lastName = getLastName();
 
-if (firstName != null &amp;&amp; firstName.equals(lastName)) { ... };
+if (firstName != null && firstName.equals(lastName)) { ... };
 ```
-## &quot;hashCode&quot; and &quot;toString&quot; should not be called on array instances
+## "hashCode" and "toString" should not be called on array instances
 
-While hashCode and toString are available on arrays, they are largely useless. hashCode returns the array&#39;s &quot;identity hash code&quot;, and toString returns nearly the same value. Neither method&#39;s output actually reflects the array&#39;s contents. Instead, you should pass the array to the relevant static Arrays method.
+While hashCode and toString are available on arrays, they are largely useless. hashCode returns the array&#39;s "identity hash code", and toString returns nearly the same value. Neither method&#39;s output actually reflects the array&#39;s contents. Instead, you should pass the array to the relevant static Arrays method.
 ```java
 String argStr = Arrays.toString(args);
 
@@ -34,9 +34,9 @@ Strings are immutable objects, so concatenation doesn&#39;t simply add the new S
 
 ### Noncompliant Code Example
 ```java
-String str = &quot;&quot;;
+String str = "";
 
-for (int i = 0; i \&lt; arrayOfStrings.length ; ++i) {
+for (int i = 0; i < arrayOfStrings.length ; ++i) {
 
     str = str + arrayOfStrings[i];
 
@@ -46,24 +46,24 @@ for (int i = 0; i \&lt; arrayOfStrings.length ; ++i) {
 ```java
 StringBuilder bld = new StringBuilder();
 
-for (int i = 0; i \&lt; arrayOfStrings.length; ++i) {
+for (int i = 0; i < arrayOfStrings.length; ++i) {
 
     bld.append(arrayOfStrings[i]);
 
 }
 ```
 
-## &quot;toString()&quot; should never be called on a String object
+## "toString()" should never be called on a String object
 
 ### Noncompliant Code Example
 ```java
-String message = &quot;hello world&quot;;
+String message = "hello world";
 
 System.out.println(message.toString()); // Noncompliant;
 ```
 ### Compliant Solution
 ```java
-String message = &quot;hello world&quot;;
+String message = "hello world";
 
 System.out.println(message);
 ```
@@ -77,15 +77,15 @@ This prevents null pointer exceptions from being raised, as a string literal can
 ```java
 String myString = null;
 
-System.out.println(&quot;Equal? &quot; + myString.equals(&quot;foo&quot;)); // Noncompliant; will raise a NPE
+System.out.println("Equal? " + myString.equals("foo")); // Noncompliant; will raise a NPE
 
-System.out.println(&quot;Equal? &quot; + (myString != null &amp;&amp; myString.equals(&quot;foo&quot;))); // Noncompliant; null check could be removed
+System.out.println("Equal? " + (myString != null && myString.equals("foo"))); // Noncompliant; null check could be removed
 ```
 ### Compliant Solution
 ```java
-System.out.println(&quot;Equal?&quot; + &quot;foo&quot;.equals(myString)); // properly deals with the
+System.out.println("Equal?" + "foo".equals(myString)); // properly deals with the
 ```
-## &quot;toString()&quot; and &quot;clone()&quot; methods should not return null
+## "toString()" and "clone()" methods should not return null
 
 toString() or clone() on an object should always return a string or an object. Returning null instead contravenes the method&#39;s implicit contract.
 
@@ -107,7 +107,7 @@ public String toString () {
 
     if (this.collection.isEmpty()) {
 
-    return &quot;&quot;;
+    return "";
 
     } else {
 

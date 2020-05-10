@@ -56,7 +56,7 @@ This rule raises an issue when an instance of Calendar, DateFormat, javax.xml.xp
 
 ## Non-serializable objects should not be stored in "HttpSession" objects
 
-If you have no intention of writting an HttpSession object to file, then storing non-serializable objects in it may not seem like a big deal. But whether or not you explicitly serialize the session, it may be written to disk anyway, as the server manages its memory use in a process called "passivation". Further, some servers automatically write their active sessions out to file at shutdown &amp; deserialize any such sessions at startup.
+If you have no intention of writting an HttpSession object to file, then storing non-serializable objects in it may not seem like a big deal. But whether or not you explicitly serialize the session, it may be written to disk anyway, as the server manages its memory use in a process called "passivation". Further, some servers automatically write their active sessions out to file at shutdown & deserialize any such sessions at startup.
 
 The point is, that even though HttpSession does not extend Serializable, you must nonetheless assume that it will be serialized, and understand that if you&#39;ve stored non-serializable objects in the session, errors will result.
 ```java
