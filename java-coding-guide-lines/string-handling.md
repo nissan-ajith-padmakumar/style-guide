@@ -38,7 +38,7 @@ String str = &quot;&quot;;
 
 for (int i = 0; i \&lt; arrayOfStrings.length ; ++i) {
 
-str = str + arrayOfStrings[i];
+    str = str + arrayOfStrings[i];
 
 }
 ```
@@ -48,7 +48,7 @@ StringBuilder bld = new StringBuilder();
 
 for (int i = 0; i \&lt; arrayOfStrings.length; ++i) {
 
-bld.append(arrayOfStrings[i]);
+    bld.append(arrayOfStrings[i]);
 
 }
 ```
@@ -93,11 +93,11 @@ toString() or clone() on an object should always return a string or an object. R
 ```java
 public String toString () {
 
-if (this.collection.isEmpty()) {
+    if (this.collection.isEmpty()) {
 
-return null; // Noncompliant
+        return null; // Noncompliant
 
-} else {
+    } else {
 
 // ...
 ```
@@ -105,11 +105,11 @@ return null; // Noncompliant
 ```java
 public String toString () {
 
-if (this.collection.isEmpty()) {
+    if (this.collection.isEmpty()) {
 
-return &quot;&quot;;
+    return &quot;&quot;;
 
-} else {
+    } else {
 
 // ...
 ```

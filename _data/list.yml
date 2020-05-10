@@ -10,6 +10,16 @@ docgroups:
             url: /style-guide/java-coding-guide-lines/static-code-analysis.html
           - page: String Handling
             url: /style-guide/java-coding-guide-lines/string-handling.html
+          - page: Date Handling
+            url: /style-guide/java-coding-guide-lines/dates-handling.html
+          - page: Collections
+            url: /style-guide/java-coding-guide-lines/collections.html
+          - page: Unit Testing
+            url: /style-guide/java-coding-guide-lines/unit-testing.html
+          - page: Exception Handling
+            url: /style-guide/java-coding-guide-lines/exception-handling.html
+          - page: Other points to consider
+            url: /style-guide/java-coding-guide-lines/other-points.html
   - title: CSS and SCSS
     subfolderitems:
       - page: Overview

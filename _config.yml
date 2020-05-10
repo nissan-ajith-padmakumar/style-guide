@@ -24,5 +24,10 @@ include:
  - javascript/special-characters.md 
  - java-coding-guide-lines/static-code-analysis.md
  - java-coding-guide-lines/string-handling.md
+ - java-coding-guide-lines/dates-handling.md
+ - java-coding-guide-lines/collections.md
+ - java-coding-guide-lines/unit-testing.md
+ - java-coding-guide-lines/exception-handling.md
+ - java-coding-guide-lines/other-points.md
 
 
