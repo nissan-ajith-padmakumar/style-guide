@@ -4,8 +4,6 @@ docgroups:
       - page: Overview
         url: /style-guide/java-coding-guide-lines/
         subsubfolderitems:
-          - page: Static Code Analysis Tools
-            url: /style-guide/java-coding-guide-lines/static-code-analysis.html
           - page: String Handling
             url: /style-guide/java-coding-guide-lines/string-handling.html
           - page: Date Handling
@@ -18,6 +16,8 @@ docgroups:
             url: /style-guide/java-coding-guide-lines/exception-handling.html
           - page: Other points to consider
             url: /style-guide/java-coding-guide-lines/other-points.html
+          - page: Static Code Analysis Tools
+            url: /style-guide/java-coding-guide-lines/static-code-analysis.html
   - title: CSS and SCSS
     subfolderitems:
       - page: Overview
